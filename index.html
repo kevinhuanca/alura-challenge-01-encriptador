@@ -14,15 +14,15 @@
         <img class="logo" src="img/logo.png" alt="logo alura">
     <main>
         <section >
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea class="text-area" onkeyup="mostrar(this.value)" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div class="warning">
                 <p><img src="img/warning.png">Solo letras minúsculas y sin acentos</p>
             </div>
-            <button class="boton-encriptar">Encriptar</button>
-            <button class="boton-desencriptar">Desencriptar</button>
+            <button class="boton-encriptar" onclick="encriptar()">Encriptar</button>
+            <button class="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
         </section>
         <section>
-            <button class="boton-copiar">Copiar</button>
+            <button class="boton-copiar" onclick="copiar()">Copiar</button>
             <textarea class="mensaje" disabled></textarea>
         </section>
     </main>
